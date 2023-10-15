@@ -1,8 +1,8 @@
-#Talentos Digitales
+# Talentos Digitales
 
-###Alumno: Alejandro Herrera
+### Alumno: Alejandro Herrera
 
-##Actividad - Crear REST API
+## Actividad - Crear REST API
 
 Después de ver el vídeo tutorial para construir y probar una **REST API** ([Ver video](https://www.youtube.com/watch?v=b-a7dRyymxw)), crear una API para la gestión de libros de una biblioteca. El modelo de datos a implementar es el siguiente
 <img src="https://github.com/Alejandromarmilich/biblioteca-rest-api/blob/main/diagrama.png" alt="diagrama">
