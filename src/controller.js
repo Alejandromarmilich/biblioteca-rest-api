@@ -7,7 +7,7 @@ class BookController{
         res.json(result);
     }
 
-    async getBookById(req, res){
+    async getOne(req, res){
         const bookId = req.params.id;
         const sql = "SELECT * FROM libros WHERE id = ?";
 
@@ -16,10 +16,10 @@ class BookController{
             if(result.length === 1){
                 res.json(result[0]);
             }else{
-                res.status(404).json({message: "Libro no encontrado"})
+                res.status(404).json({mensaje: "Libro no encontrado"})
             }
         }catch (error){
-            res.status(500).json({ message: "Error al buscar el libro" })
+            res.status(500).json({ mmensaje: "Error al buscar el libro" })
         }
     }
 }

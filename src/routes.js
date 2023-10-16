@@ -4,4 +4,4 @@ import { book } from "./controller.js";
 export const router = Router();
 
 router.get("/books", book.getAll);
-router.get("/books/:id", book.getBookById);
+router.get("/books/:id", book.getOne);
