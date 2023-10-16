@@ -19,7 +19,7 @@ class BookController{
                 res.status(404).json({mensaje: "Libro no encontrado"})
             }
         }catch (error){
-            res.status(500).json({ mmensaje: "Error al buscar el libro" })
+            res.status(500).json({ mensaje: "Error al buscar el libro" })
         }
     }
 }
