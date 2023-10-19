@@ -21,9 +21,9 @@ Después de ver el vídeo tutorial para construir y probar una REST API ([Ver vi
 
 ## Consignas del trabajo:
 1. De acuerdo al proyecto creado en la actividad “Crear REST API”, agregar las siguientes funcionalidades para la gestión de libros de la biblioteca.
-    a. Crear un libro incluyendo las características del modelo de datos.
-    b. Actualizar un libro.
-    c. Eliminar un libro proporcionando su ISBN.
-    d. Implementar el manejo de excepciones (try-catch) al recibir solicitudes incompatibles ([Ver video](https://www.youtube.com/watch?v=vZJlQzptBCo)). Por ejemplo, que en el alta se envíen atributosinexistentes en el modelo de datos (precio, stock, etc.), editar o eliminarcon ISBN de un libro no cargado, entre otras.
+a. Crear un libro incluyendo las características del modelo de datos.
+b. Actualizar un libro.
+c. Eliminar un libro proporcionando su ISBN.
+d. Implementar el manejo de excepciones (try-catch) al recibir solicitudes incompatibles ([Ver video](https://www.youtube.com/watch?v=vZJlQzptBCo)). Por ejemplo, que en el alta se envíen atributosinexistentes en el modelo de datos (precio, stock, etc.), editar o eliminarcon ISBN de un libro no cargado, entre otras.
 2. Versionar el código del proyecto de manera que existan como mínimo 5 commits. Ejemplos de mensajes de commits: configuración servicio base de datos, alta de libros, fix consulta SQL para baja de libro.
 3. Subir cambios al repositorio remoto público en Github creado para la actividad“Crear REST API”.Para realizar la entrega de la tarea enviar un archivo de texto con el enlace al repositorio (mismo enlace de la entrega anterior).

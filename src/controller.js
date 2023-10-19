@@ -10,7 +10,6 @@ class BookController{
     async getOne(req, res){
         const bookId = req.params.id;
         const sql = "SELECT * FROM libros WHERE id = ?";
-
         try{
             const [result] = await pool.query(sql, [bookId]);
             if(result.length === 1){
@@ -22,6 +21,16 @@ class BookController{
             res.status(500).json({ mensaje: "Error al buscar el libro" })
         }
     }
+
+    async add(req, res){
+        const book = req.body;
+        const result = await pool.query(
+            `INSERT INTO Libros(name, author, category, year, ISBN) VALUES (?, ?, ?, ?, ?)`,
+            [book.name, book.author, book.category, book.year, book.ISBN]
+        );
+        res.json({ "Id insertado": result.insertId });
+    }
+
 }
 
 export const book = new BookController();

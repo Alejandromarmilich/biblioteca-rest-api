@@ -1,7 +1,7 @@
 {
   "name": "biblioteca-rest-api",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "API para la gestión de libros de una biblioteca",
   "main": "index.js",
   "scripts": {
