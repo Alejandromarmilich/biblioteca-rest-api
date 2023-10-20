@@ -30,14 +30,95 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/books/5",
+					"raw": "localhost:3000/books/11",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"books",
-						"5"
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Java para lelos\",\r\n    \"author\": \"Alejandro Herrera\",\r\n    \"category\": \"Tecnología\",\r\n    \"year\": \"2023-04-14\",\r\n    \"ISBN\": \"9788437601404\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/book",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 11,\r\n    \"name\": \"Java para lelos\",\r\n    \"author\": \"Alejandro Herrera\",\r\n    \"category\": \"Programación\",\r\n    \"year\": \"2023-04-14T03:00:00.000Z\",\r\n    \"ISBN\": \"1234567898745\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/book",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ISBN\": \"1234567898745\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/book",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book"
 					]
 				}
 			},

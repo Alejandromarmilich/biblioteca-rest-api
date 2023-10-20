@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-10-2023 a las 18:16:16
+-- Tiempo de generación: 20-10-2023 a las 15:52:28
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -20,15 +20,11 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `biblioteca`
 --
-CREATE DATABASE IF NOT EXISTS `biblioteca` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `biblioteca`;
 
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `libros`
---
--- Creación: 16-10-2023 a las 00:57:12
 --
 
 CREATE TABLE `libros` (
@@ -37,24 +33,24 @@ CREATE TABLE `libros` (
   `author` varchar(30) NOT NULL,
   `category` varchar(30) NOT NULL,
   `year` date NOT NULL,
-  `ISBN` varchar(13) NOT NULL
+  `isbn` varchar(13) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `libros`
 --
 
-INSERT INTO `libros` (`id`, `name`, `author`, `category`, `year`, `ISBN`) VALUES
-(1, 'El Gran Gatsby', 'F. Scott Fitzgerald', 'Ficción', '1925-10-06', '978-3-16-1484'),
-(2, 'Cien años de soledad', 'Gabriel García Márquez', 'Ficción', '1982-05-20', '978-0-307-259'),
-(3, 'Don Quijote de la Mancha', 'Miguel de Cervantes', 'Clásico', '1605-01-20', '978-1-03-3811'),
-(4, '1984', 'George Orwell', 'Ciencia ficción', '1948-07-15', '978-0-452-284'),
-(5, 'Harry Potter 1', 'J.K. Rowling', 'Fantasía', '2001-10-07', '978-0-7475-32'),
-(6, 'Orgullo y prejuicio', 'Jane Austen', 'Romance', '1813-04-14', '978-0-14-1439'),
-(7, 'Matar un ruiseñor', 'Harper Lee', 'Drama', '1960-07-23', '978-84-9838-3'),
-(8, 'La sombra del viento', 'Carlos Ruiz Zafón', 'Misterio', '2001-05-01', '978-84-08-037'),
-(9, 'El código Da Vinci', 'Dan Brown', 'Suspense', '2003-08-29', '978-84-08-037'),
-(10, 'Los juegos del hambre', 'Suzanne Collins', 'Ciencia ficción', '2008-10-14', '978-84-253-46');
+INSERT INTO `libros` (`id`, `name`, `author`, `category`, `year`, `isbn`) VALUES
+(1, 'Cien años de soledad', 'Gabriel García Márquez', 'Realismo mágico', '1967-01-01', '9788437604947'),
+(2, '1984', 'George Orwell', 'Distopía', '1949-01-01', '9788437604947'),
+(3, 'Amor en el cólera', 'Gabriel García Márquez', 'Realismo mágico', '1985-01-01', '9788437604947'),
+(4, 'Matar a un ruiseñor', 'Harper Lee', 'Novela de aprendizaje', '1960-01-01', '9788437604947'),
+(5, 'Don Quijote', 'Miguel de Cervantes', 'Novela clásica', '1605-01-01', '9788437604947'),
+(6, 'Los juegos del hambre', 'Suzanne Collins', 'Ciencia ficción', '2008-01-01', '9788437604947'),
+(7, 'Harry Potter y la piedra', 'J.K. Rowling', 'Fantasía', '1997-01-01', '9788437604947'),
+(8, 'El Señor de los Anillos', 'J.R.R. Tolkien', 'Fantasía', '1954-01-01', '9788437604947'),
+(9, 'Crimen y castigo', 'Fyodor Dostoevsky', 'Novela psicológica', '1866-01-01', '9788437604947'),
+(10, 'En busca del tiempo', 'Marcel Proust', 'Novela modernista', '1913-01-01', '9788437604947');
 
 --
 -- Índices para tablas volcadas
@@ -74,7 +70,7 @@ ALTER TABLE `libros`
 -- AUTO_INCREMENT de la tabla `libros`
 --
 ALTER TABLE `libros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
